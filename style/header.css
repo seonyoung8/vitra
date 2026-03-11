@@ -1,0 +1,77 @@
+header{
+    padding-bottom: 2rem;
+    background-color: #FFFEFA;
+    max-height: 100px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: all 0.4 ease 0s;
+    border-bottom: 1px solid var(--pm-color-700);
+}
+header:hover{
+    max-height: 500px;
+}
+header .common-frame{
+    display: flex;
+    justify-content: space-between;
+}
+header nav{
+}
+header .sns{
+    justify-content: flex-end;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+.gnb{
+    display: flex;
+    gap:1.5rem;
+}
+.gnb>li>a{
+    font-size: var(--fs-bd2);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2rem;
+    display: block;
+}
+/* a태그는 인라인 블록 레벨이라서 위아래 너비가 늘어나지 않아 block형태로 변경 */
+.gnb ul{
+    font-size: var(--fs-bd2);
+    font-weight: var(--fw-med);
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+}
+
+.gnb a:hover{
+    color:var(--point-color);
+}
+
+.header-smart{
+    display: none;
+}
+
+@media (max-width:1440px){
+    header{
+        display: none;
+    }
+    .header-smart{
+        display: block;
+        border-bottom: 1px solid var(--pm-color-700);
+    }
+    .header-smart .common-frame{
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .header-smart .logo img{
+        height: 4.5rem;
+    }
+    .header-smart .btn-menu{
+        position: absolute;
+        right: 0;
+        top:50%;
+        transform: translateY(-50%);
+        line-height: 0;
+    }
+    .header-smart .btn-menu img{
+        height: 1.2rem;
+    }
+} 

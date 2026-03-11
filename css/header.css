@@ -1,0 +1,27 @@
+@import url("../style/system.css");
+
+header{
+    border:1px solid red;
+}
+header .common-frame{
+    display: flex;
+    justify-content: space-between;
+}
+header nav{
+    border: 1px solid red;
+}
+header .sns{
+    justify-content: flex-end;
+}
+.gnb{
+    display: flex;
+    gap:1.5rem;
+}
+.gnb>li>a{
+    font-size: var(--fs-bd2);
+    font-weight: var(--fw-bold);
+}
+.gnb ul{
+    font-size: var(--fs-bd2);
+    font-weight: var(--fw-bold);
+}

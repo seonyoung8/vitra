@@ -1,4 +1,4 @@
-.root{
+:root{
     /* 화면에 따른 수치 */
     --basic-font-pc:20px;
     --basic-font-tab:18px;
@@ -8,7 +8,7 @@
     --fs-h1:1.601rem;
     --fs-h2:1.423rem;
     --fs-h3:1.265rem;
-    --fs-h4:1.125rem
+    --fs-h4:1.125rem;
     --fs-bd1:1rem;
     --fs-bd2:0.875rem;
     --fs-det:0.765rem;
@@ -30,6 +30,7 @@
     --pm-color-700:#6F932B;
     --pm-color-800:#638A1B;
     --pm-color-900:#5D870E;
+    --point-color:#FFCC32;
 
     /* 여백 */
     --space-2x-small:0.125rem;
