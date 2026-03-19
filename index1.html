@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORVA</title>
+    <link rel="stylesheet" href="./style/font.css">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/system.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/header2.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <script src="./script/header.js"></script>
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+    <!-- 스마트 기기에서 보이는 메뉴 -->
+    <div class="menu-smart-hidden">
+        <div class="menu-top">
+            <div class="common-frame">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./img/logo.svg" alt="상단로고">
+                    </a>
+                </div>
+                <span class="btn-close"><img src="./img/btn-close.svg" alt="전체메뉴닫기버튼"></span>
+            </div>
+        </div>
+        <div class="menu-content">
+            <div class="common-frame">
+                <ul class="gnb-smart">
+                    <li class="">
+                        <span class="btn-more mo"><img src="./img/btn-more.svg" alt="메뉴 더보기"></span>
+                        <a href="#">MORVA</a>
+                        <ul>
+                            <li><a href="#">MORVA Story</a></li>
+                            <li><a href="#">MORVA Value</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="btn-more mo"><img src="./img/btn-more.svg" alt="메뉴 더보기"></span>
+                        <a href="#">Drink Menu</a>
+                        <ul>
+                            <li><a href="#">MORVA Coffee</a></li>
+                            <li><a href="#">Signature</a></li>
+                            <li><a href="#">Non-Coffee</a></li>
+                            <li><a href="#">Ade & Tea</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="btn-more mo"><img src="./img/btn-more.svg" alt="메뉴 더보기"></span>
+                        <a href="#">Food</a>
+                        <ul>
+                            <li><a href="#">Desert</a></li>
+                            <li><a href="#">Bakery</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="btn-more mo"><img src="./img/btn-more.svg" alt="메뉴 더보기"></span>
+                        <a href="#">Store</a>
+                        <ul>
+                            <li><a href="#">매장 찾기</a></li>
+                            <li><a href="#">신규 매장</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="btn-more mo"><img src="./img/btn-more.svg" alt="메뉴 더보기"></span>
+                        <a href="#">Fanchise</a>
+                        <ul>
+                            <li><a href="#">가맹 안내</a></li>
+                            <li><a href="#">창업 비용</a></li>
+                            <li><a href="#">창업 절차</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="btn-more mo"><img src="./img/btn-more.svg" alt="메뉴 더보기"></span>
+                        <a href="#">Promotion</a>
+                        <ul>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">Seasonal Menu</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-sns common-frame">
+            <ul class="sns">
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="./img/sns-insta1.svg" alt="모르바 인스타 바로가기">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="./img/sns-youtube2.svg" alt="모르바 유튜브 채널 바로가기">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="./img/sns-twitter3.svg" alt="모르바 트위터 바로가기">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- pc용 헤더 -->
+    <header class="minjiB">
+        <div class="common-frame">
+            <div class="logo">
+                <a href="#">
+                    <img src="./img/logo.svg" alt="모르바 로고">
+                </a>
+            </div>
+            <ul class="gnb">
+                <li>
+                    <a href="#">MORVA</a>
+                    <ul>
+                        <li><a href="#">MORVA Story</a></li>
+                        <li><a href="#">MORVA Value</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Drink Menu</a>
+                    <ul>
+                        <li><a href="#">MORVA Coffee</a></li>
+                        <li><a href="#">Signature</a></li>
+                        <li><a href="#">Non-Coffee</a></li>
+                        <li><a href="#">Ade & Tea</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Food</a>
+                    <ul>
+                        <li><a href="#">Desert</a></li>
+                        <li><a href="#">Bakery</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Store</a>
+                    <ul>
+                        <li><a href="#">매장 찾기</a></li>
+                        <li><a href="#">신규 매장</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Fanchise</a>
+                    <ul>
+                        <li><a href="#">가맹 안내</a></li>
+                        <li><a href="#">창업 비용</a></li>
+                        <li><a href="#">창업 절차</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Promotion</a>
+                    <ul>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">Seasonal Menu</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="sns">
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="./img/sns-insta1.svg" alt="모르바 인스타 바로가기">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="./img/sns-youtube2.svg" alt="모르바 유튜브 채널 바로가기">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="./img/sns-twitter3.svg" alt="모르바 트위터 바로가기">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 스마트 기기용 헤더 -->
+    <div class="header-smart">
+        <div class="common-frame">
+            <div class="logo">
+                <a href="#">
+                    <img src="./img/logo.svg" alt="상단로고">
+                </a>
+            </div>
+            <span class="btn-menu"><img src="./img/btn-menu.svg" alt="전체메뉴버튼"></span>
+        </div>
+    </div>
+
+    <!-- 전체 컨텐츠 -->
+    <main>
+        <!-- 히어로배너 -->
+        <!-- Slider main container -->
+        <div class="swiper hero-slider">
+        <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="./img/slide1-pc.jpg" alt="morva coffee grand open banner" class="pc">
+                    <img src="./img/slide1-tab.jpg" alt="morva coffee grand open banner" class="tab">
+                    <img src="./img/slide1-mo.jpg" alt="morva coffee grand open banner" class="mo">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/slide2-pc.jpg" alt="morva coffee grand open banner" class="pc">
+                    <img src="./img/slide1-tab.jpg" alt="morva coffee grand open banner" class="tab">
+                    <img src="./img/slide2-mo.jpg" alt="morva coffee grand open banner" class="mo">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/slide3-pc.jpg" alt="morva coffee grand open banner" class="pc">
+                    <img src="./img/slide1-tab.jpg" alt="morva coffee grand open banner" class="tab">
+                    <img src="./img/slide3-mo.jpg" alt="morva coffee grand open banner" class="mo">
+                </div>
+            </div>
+            <div class="pagination"></div>
+        </div>
+        <script>
+            const heroSwiper = new Swiper('.hero-slider', {
+            // Optional parameters
+            // direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            });
+        </script>
+
+        <div class="story">
+            <div class="common-frame">
+                <h1>our story</h1>
+                <div class="story-frame">
+                    <div class="txt-story">
+                        <h2>MOLVA Brand Narrative</h2>
+                        <h4>Brew Your Moment.</h4>
+                        <p>MOLVA는 하루의 작은 여백을 위해 시작되었습니다.깊은 향과 부드러운 밸런스, 그리고 honest price.우리는 복잡함 대신 본질을 선택합니다.</p>
+                        <p>당신의 일상이 조금 더 따뜻해지도록,매일의 커피를 정성스럽게 만듭니다.</p>
+                    </div>
+                    <figure class="img-story">
+                        <img src="./img/story.jpg" alt="카페 인테리어 사진">
+                    </figure>
+                </div>
+                <div class="philo">
+                    <ul class="philo-list">
+                        <li>
+                            <h3>01. Brand Philosophy</h3>
+                            <div>
+                                <p class="fwb">MOLVA is more than coffee.</p>
+                                <p class="fwr">
+                                    몰바는 단순한 음료를 판매하는 브랜드가 아닙니다.우리는 하루 속 잠시 멈추는 “a small pause”를 만듭니다.바쁜 일상 속에서도 커피 한 잔이 주는 여유를 믿습니다.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>02. Quality & Balance</h3>
+                            <div>
+                                <p class="fwb">Balanced Flavor, Honest Price.</p>
+                                <p class="fwr">
+                                    깊고 균형 잡힌 블렌딩,누구나 부담 없이 즐길 수 있는 합리적인 가격.몰바는 맛과 가격 사이에서 가장 이상적인 균형을 찾았습니다.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>03. Daily Ritual</h3>
+                            <div>
+                                <p class="fwb">Your Everyday Ritual.</p>
+                                <p class="fwr">
+                                    매일 반복되는 하루 속, 자연스럽게 떠오르는 이름이 되길 바랍니다. 특별하지 않아도 괜찮은,그래서 더 소중한 일상의 커피.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-frame signature">
+            <div class="common-frame">
+                <h1>SIGNATURE MENU</h1>
+                <p class="fwm">몰바만의 로스팅으로 완성한 깊고 부드러운 시그니처 커피.</p>
+                <div class="swiper signature-menu-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./img/sig1.jpg" alt="MOLVA Deep Ember">
+                            </figure>
+                            <h4>MOLVA Deep Ember</h4>
+                            <p class="fwm">다크 로스팅 원두의 깊은 향과 묵직한 바디감을 담은 몰바의 시그니처 블랙.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./img/sig2.jpg" alt="MOLVA Cream Noir">
+                            </figure>
+                            <h4>MOLVA Cream Noir</h4>
+                            <p class="fwm">부드러운 크림과 진한 에스프레소가 층을 이루는 벨벳 텍스처 라떼.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./img/sig3.jpg" alt="MOLVA Golden Vanilla">
+                            </figure>
+                            <h4>MOLVA Golden Vanilla</h4>
+                            <p class="fwm">은은한 바닐라 향과 고소한 밀크 밸런스가 조화를 이루는 프리미엄 라떼.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./img/sig4.jpg" alt="MOLVA Midnight Cold Brew">
+                            </figure>
+                            <h4>MOLVA Midnight Cold Brew</h4>
+                            <p class="fwm">저온 숙성으로 완성한 깔끔한 산미와 깊은 풍미의 콜드브루.</p>
+                        </div>
+                    </div>
+                </div>
+    <script>
+        const signatureMenuSlider = new Swiper(".signature-menu-slider",{
+            slidesPerView: 1.3,
+            spaceBetween: 14,
+            breakpoints:{
+                400:{
+                    // 400화면너비보다 클 때
+                    slidesPerView: 2.2,
+                    spaceBetween: 14,
+                },
+                768:{
+                    // 768화면너비보다 클 때
+                    slidesPerView: 4,
+                    spaceBetween: 18,
+                },
+                1440:{
+                    // 1440화면너비보다 클 때
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                }
+            }
+        })
+    </script>
+            </div>
+        </div>
+
+        <div class="menu-frame best">
+            <div class="common-frame">
+                <h1>BEST MENU</h1>
+                <p class="fwm">매일 가장 많이 선택되는, 몰바의 자신 있는 한 잔.</p>
+                <div class="swiper best-menu-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./img/best1.jpg" alt="MOLVA Deep Black">
+                            </figure>
+                            <h4>MOLVA Deep Black</h4>
+                            <p class="fwm">깊고 진한 바디감이 살아있는 몰바 시그니처 아메리카노</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./img/best2.jpg" alt="Creamy Cloud Latte">
+                            </figure>
+                            <h4>Creamy Cloud Latte</h4>
+                            <p class="fwm">부드러운 밀크 폼과 에스프레소의 완벽한 레이어</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./img/best3.jpg" alt="Vanilla Silk Latte">
+                            </figure>
+                            <h4>Vanilla Silk Latte</h4>
+                            <p class="fwm">은은한 바닐라 향이 감싸는 달콤하고 고소한 라떼</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./img/best4.jpg" alt="Dark Cocoa Mocha">
+                            </figure>
+                            <h4>Dark Cocoa Mocha</h4>
+                            <p class="fwm">진한 초콜릿과 커피가 조화를 이루는 클래식 모카</p>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    const bestMenuSlider = new Swiper(".best-menu-slider",{
+                        slidesPerView: 1.3,
+                        spaceBetween: 14,
+                        breakpoints:{
+                            400:{
+                                // 400화면너비보다 클 때
+                                slidesPerView: 2.2,
+                                spaceBetween: 14,
+                            },
+                            768:{
+                                // 768화면너비보다 클 때
+                                slidesPerView: 4,
+                                spaceBetween: 18,
+                            },
+                            1440:{
+                                // 1440화면너비보다 클 때
+                                slidesPerView: 4,
+                                spaceBetween: 20,
+                            }
+                        }
+                    })
+                </script>
+            </div>
+        </div>
+
+        <div class="franchise">
+            <div class="common-frame">
+                <h1>당신의 시작을, MOLVA가 함께합니다.</h1>
+                <p class="fwm">검증된 시스템과 감각적인 브랜딩으로 안정적인 창업을 제안합니다.</p>
+                <a href="#" class="btn-style">가맹 상담 신청 <img src="./img/arrow-btn.svg" alt="바로가기 화살표"></a>
+                <h3>MOLVA를 선택해야 하는 이유</h3>
+                <ul class="why">
+                    <li>
+                        <p class="fwb">합리적인 창업 비용</p>
+                        <p class="fwm">초기 투자 부담을 낮춘 현실적인 가맹 모델</p>
+                    </li>
+                    <li>
+                        <p class="fwb">합리적인 가격, 높은 만족</p>
+                        <p class="fwm">좋은 커피가 반드시 비싸야 할 필요는 없습니다</p>
+                    </li>
+                    <li>
+                        <p class="fwb">간결하지만 강한 브랜드</p>
+                        <p class="fwm">복잡한 요소를 덜어낸 미니멀한 브랜드 철학</p>
+                    </li>
+                    <li>
+                        <p class="fwb">누구에게나 편안한 공간</p>
+                        <p class="fwm">누구나 편하게 머물 수 있는 일상의 휴식 공간</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="common-frame">
+            <div class="ft1">
+                <ul class="ft-menu fwb">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li class="ptc"><a href="#">개인정보처리방침</a></li>
+                </ul>
+                <ul class="sns">
+                    <li>
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.0047 6.6094C9.02341 6.6094 6.61873 9.01409 6.61873 11.9953C6.61873 14.9766 9.02341 17.3813 12.0047 17.3813C14.9859 17.3813 17.3906 14.9766 17.3906 11.9953C17.3906 9.01409 14.9859 6.6094 12.0047 6.6094ZM12.0047 15.4969C10.0781 15.4969 8.5031 13.9266 8.5031 11.9953C8.5031 10.0641 10.0734 8.49377 12.0047 8.49377C13.9359 8.49377 15.5062 10.0641 15.5062 11.9953C15.5062 13.9266 13.9312 15.4969 12.0047 15.4969ZM18.8672 6.38909C18.8672 7.08752 18.3047 7.64534 17.6109 7.64534C16.9125 7.64534 16.3547 7.08284 16.3547 6.38909C16.3547 5.69534 16.9172 5.13284 17.6109 5.13284C18.3047 5.13284 18.8672 5.69534 18.8672 6.38909ZM22.4344 7.66409C22.3547 5.98127 21.9703 4.49065 20.7375 3.26252C19.5094 2.0344 18.0187 1.65002 16.3359 1.56565C14.6015 1.46721 9.4031 1.46721 7.66873 1.56565C5.9906 1.64534 4.49998 2.02971 3.26716 3.25784C2.03435 4.48596 1.65466 5.97659 1.57029 7.6594C1.47185 9.39377 1.47185 14.5922 1.57029 16.3266C1.64998 18.0094 2.03435 19.5 3.26716 20.7281C4.49998 21.9563 5.98591 22.3406 7.66873 22.425C9.4031 22.5235 14.6015 22.5235 16.3359 22.425C18.0187 22.3453 19.5094 21.961 20.7375 20.7281C21.9656 19.5 22.35 18.0094 22.4344 16.3266C22.5328 14.5922 22.5328 9.39846 22.4344 7.66409ZM20.1937 18.1875C19.8281 19.1063 19.1203 19.8141 18.1969 20.1844C16.814 20.7328 13.5328 20.6063 12.0047 20.6063C10.4765 20.6063 7.1906 20.7281 5.81248 20.1844C4.89373 19.8188 4.18591 19.111 3.8156 18.1875C3.26716 16.8047 3.39373 13.5235 3.39373 11.9953C3.39373 10.4672 3.27185 7.18127 3.8156 5.80315C4.18123 4.8844 4.88904 4.17659 5.81248 3.80627C7.19529 3.25784 10.4765 3.3844 12.0047 3.3844C13.5328 3.3844 16.8187 3.26252 18.1969 3.80627C19.1156 4.1719 19.8234 4.87971 20.1937 5.80315C20.7422 7.18596 20.6156 10.4672 20.6156 11.9953C20.6156 13.5235 20.7422 16.8094 20.1937 18.1875Z" fill="black"/>
+</svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.9023 6.50346C22.6406 5.51804 21.8695 4.74196 20.8904 4.47858C19.1159 4 12 4 12 4C12 4 4.88415 4 3.10953 4.47858C2.13048 4.742 1.3594 5.51804 1.09769 6.50346C0.622192 8.28958 0.622192 12.0162 0.622192 12.0162C0.622192 12.0162 0.622192 15.7427 1.09769 17.5289C1.3594 18.5143 2.13048 19.258 3.10953 19.5214C4.88415 20 12 20 12 20C12 20 19.1158 20 20.8904 19.5214C21.8695 19.258 22.6406 18.5143 22.9023 17.5289C23.3778 15.7427 23.3778 12.0162 23.3778 12.0162C23.3778 12.0162 23.3778 8.28958 22.9023 6.50346ZM9.67269 15.3996V8.63271L15.6202 12.0162L9.67269 15.3996Z" fill="black"/>
+</svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.533 7.11169C21.5482 7.32488 21.5482 7.53811 21.5482 7.7513C21.5482 14.2538 16.599 21.7462 7.5533 21.7462C4.76648 21.7462 2.17767 20.9391 0 19.5381C0.395953 19.5838 0.776625 19.599 1.18781 19.599C3.48727 19.599 5.60405 18.8224 7.29441 17.4975C5.13197 17.4518 3.31978 16.0356 2.69541 14.0863C3 14.132 3.30455 14.1624 3.62437 14.1624C4.06598 14.1624 4.50764 14.1015 4.91878 13.995C2.66498 13.5381 0.974578 11.5584 0.974578 9.16753V9.10664C1.62937 9.47213 2.39086 9.70055 3.19791 9.73097C1.87303 8.8477 1.00505 7.34011 1.00505 5.63452C1.00505 4.72083 1.24866 3.88327 1.67508 3.1523C4.09641 6.13706 7.73602 8.08627 11.8172 8.2995C11.7411 7.93402 11.6954 7.55335 11.6954 7.17263C11.6954 4.46194 13.8883 2.25385 16.6141 2.25385C18.0304 2.25385 19.3095 2.84775 20.208 3.80714C21.3197 3.59395 22.3857 3.18277 23.3299 2.61933C22.9643 3.76149 22.1877 4.72088 21.1674 5.32997C22.1573 5.22342 23.1167 4.94925 23.9999 4.56858C23.33 5.54316 22.4924 6.41114 21.533 7.11169Z" fill="black"/>
+</svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ft2">
+                <ul class="f-gnb b2">
+                    <li>
+                        <a href="#">MORVA</a>
+                        <ul>
+                            <li><a href="#">MORVA Story</a></li>
+                            <li><a href="#">MORVA Value</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Drink Menu</a>
+                        <ul>
+                            <li><a href="#">MORVA Coffee</a></li>
+                            <li><a href="#">Signature</a></li>
+                            <li><a href="#">Non-Coffee</a></li>
+                            <li><a href="#">Ade & Tea</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Food</a>
+                        <ul>
+                            <li><a href="#">Desert</a></li>
+                            <li><a href="#">Bakery</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Store</a>
+                        <ul>
+                            <li><a href="#">매장 찾기</a></li>
+                            <li><a href="#">신규 매장</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Fanchise</a>
+                        <ul>
+                            <li><a href="#">가맹 안내</a></li>
+                            <li><a href="#">창업 비용</a></li>
+                            <li><a href="#">창업 절차</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Promotion</a>
+                        <ul>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">Seasonal Menu</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="ft3">
+                <div class="cinfo">
+                    <dl class="cinfo-list b2">
+                        <dt>상호명</dt>
+                        <dd>MOLVA Coffee</dd>
+                        <dt>주소</dt>
+                        <dd>서울특별시 강남구 몰바로 123</dd>
+                        <dt>대표자</dt>
+                        <dd>정현진</dd>
+                        <dt>대표번호</dt>
+                        <dd>02-1234-1234</dd>
+                        <dt>사업자등록번호</dt>
+                        <dd>123-45-67890</dd>
+                        <dt>이메일</dt>
+                        <dd>info@molva.co.kr</dd>
+                    </dl>
+                </div>
+                <div class="flogo">
+                    <a href="#">
+                        <img src="./img/footlogo.svg" alt="하단로고">
+                    </a>
+                </div>
+            </div>
+            <div class="ft4 b2">ⓒ 2026 MOLVA Coffee. 취업용도의 포트폴리오 웹사이트입니다.</div>
+        </div>
+    </footer>
+</body>
+</html>
