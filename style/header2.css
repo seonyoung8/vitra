@@ -1,0 +1,219 @@
+header{
+    border-bottom:1px solid var(--point-color); 
+    padding-bottom: 2rem;
+    background-color: #fff;  
+    max-height: 100px;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all 0.5s ease 0s;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 1000;
+    width:100%;
+}
+header:hover{
+    max-height: 400px;
+}
+header .common-frame{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.gnb{
+    display: flex;
+    gap:2.5rem;
+}
+.gnb>li>a{
+    font-size:var(--fs-bd2);
+    font-weight: var(--fw-bold);
+    height:100px;
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+.gnb ul{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size:var(--fs-bd2);
+    font-weight: var(--fw-med);
+}
+header .sns{
+    height: 100px;
+}
+header .sns li{
+    display: flex;
+    align-items: center;
+}
+.gnb a:hover{
+    color:var(--point-color);
+}
+.header-smart{display: none;}
+.menu-smart-hidden{display: none;}
+.btn-close img{
+    height:1.2rem;
+}
+
+@media (max-width:1440px){
+    .menu-smart-hidden{
+        /* transform: translateX(-100%); */
+        filter: blur(50px);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.7s ease 0s;
+    }
+    .menu-smart-hidden.on{
+        /* transform: translateX(0%); */
+        filter: blur(0px);
+        opacity: 1;
+        pointer-events: auto;
+    }
+    header{
+        display: none;
+    }
+    .header-smart{
+        display: block;
+        border-bottom: 1px solid var(--point-color);
+        position: fixed;
+        z-index: 2000;
+        left:0;
+        top:0;
+        width:100%;
+        background-color: #fff;
+    }
+    .header-smart .common-frame{
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .header-smart .logo img{
+        height:5rem;
+    }
+    .header-smart .btn-menu{
+        position: absolute;
+        right:0;
+        top:50%;
+        transform: translateY(-50%);
+        line-height: 0;
+    }
+    .header-smart .btn-menu img{
+        height:1.2rem;
+    }
+
+    .menu-smart-hidden{
+        display: block;
+        position: fixed;
+        width:100%;
+        height:100%;
+        left:0;
+        top:0;
+        background-color: #fff;
+        z-index: 3000;
+    
+    }
+    .menu-top{
+        border-bottom:1px solid var(--point-color);
+    }
+    .menu-top .common-frame{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 0;
+    }
+    .menu-top .logo{
+        
+    }
+    .menu-top .logo img{
+        height:5rem;
+        
+    }
+
+    .menu-content{
+        max-height: calc(100vh - 8rem);
+        overflow: auto;
+        padding-top: 2rem;
+        box-sizing: border-box;
+    }
+    .gnb-smart{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:3rem 1rem;
+        font-size: var(--fs-bd2);
+    }
+    .gnb-smart>li{
+    }
+    .gnb-smart>li>a{
+        font-weight: var(--fw-bold);
+        display: block;
+        border-left: 3px solid var(--point-color);
+        padding-left: .5rem;
+        margin-bottom: 1rem;
+        color:var(--pm-color-700);
+    }
+    .gnb-smart ul{
+        font-weight: var(--fw-med);
+        display: flex;
+        flex-direction: column;
+        gap:.5rem;
+    }
+    .menu-sns{
+        height:3rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+@media (max-width:768px){
+    .gnb-smart{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:0;
+    }
+    .gnb-smart>li{
+        max-height: 40px;
+        overflow: hidden;
+        position: relative;
+        transition: all .5s ease 0s;
+    }
+    .gnb-smart>li.on{
+        max-height: 300px;
+    }
+    .gnb-smart>li .btn-more img{
+        transition:all .5s ease 0s;
+    }
+    .gnb-smart>li.on .btn-more img{
+        transform: rotate(180deg);
+    }
+    .gnb-smart>li>a{
+        display: flex;
+        height:40px;
+        align-items: center;
+        border-left: none;
+        padding-left: 0;
+        margin-bottom: 1rem;
+        color:#000;
+        border-bottom: 1px solid #000;
+        box-sizing: border-box;
+    }
+    .gnb-smart ul a{
+        display: flex;
+        height:30px;
+        align-items: center;
+    }
+    .gnb-smart ul{
+        gap:0;
+    }
+    .btn-more{
+        position: absolute;
+        /* width:40px; */
+        padding-left: 20px;
+        height:40px;
+        right:0;
+        top:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}

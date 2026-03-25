@@ -1,0 +1,155 @@
+.hero-slider{
+    width:100%;
+    height: calc(100vh - 100px);
+}
+.hero-slider .swiper-slide img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.hero-slider.swiper .pagination{
+    display: flex;
+    gap:.5rem;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom:2rem;
+    z-index: 10;
+    justify-content: center;
+}
+.pagination>span{
+    background:#fff;
+    box-shadow: 0 0 10px #ddd;
+    width:0.8rem;
+    height:0.8rem;
+    border-radius: 50%;
+}
+.hero-slider .swiper-pagination-bullet {
+    opacity: 1;
+}
+.pagination>span.swiper-pagination-bullet-active {
+    background: var(--point-color);
+}
+.story{
+    margin:var(--space-3x-large) 0;
+}
+.story h1{
+    margin-bottom: var(--space-2x-large);
+    text-transform: uppercase;
+}
+.story-frame{
+    display: flex;
+    gap: var(--space-normal);
+}
+.txt-story{flex:5;}
+.img-story{flex:7;}
+
+.story-frame h2{
+    margin-bottom: var(--space-normal);
+}
+.story-frame h4{
+    margin-bottom: var(--space-large);
+}
+.story-frame h4+p{
+    margin-bottom: var(--space-normal);
+}
+.philo{
+    margin-top: 4.5rem;
+}
+.philo-list{
+    display: flex;;
+    gap:var(--space-normal);
+}
+.philo-list>li{
+    flex:1;
+}
+.philo-list>li h3{
+    margin-bottom: var(--space-large);
+}
+.philo-list>li h3+div{
+    border-left: 0.2rem solid var(--point-color);
+    padding-left: var(--space-normal);
+}
+.philo-list>li h3+div p:nth-of-type(1){
+    margin-bottom: var(--space-normal);
+}
+
+.menu-frame{
+    margin-bottom: var(--space-3x-large);
+}
+.menu-frame h1{
+    margin-bottom: var(--space-small);
+}
+.menu-frame h1+p{
+    margin-bottom: var(--space-x-large);
+}
+.menu-frame .swiper-slide h4{
+    margin-top: 1.5rem;
+    margin-bottom: var(--space-small);
+}
+
+.franchise{
+    background:
+    linear-gradient(30deg,rgba(0, 0, 0, 0.62),rgba(0, 0, 0, 0.62)),
+    url(../img/bg-franchise.jpg) no-repeat 50% 50% / cover;
+    color:#fff;
+    padding: var(--space-3x-large) 0;
+    text-align: center;
+}
+.franchise h1{
+    margin-bottom: var(--space-small);
+}
+.franchise h1+p{
+    margin-bottom: var(--space-x-large);
+}
+.franchise h3{
+    margin-top: var(--space-3x-large);
+}
+.why{
+    margin-top: var(--space-2x-large);
+    display: flex;
+    gap:var(--space-normal);
+    text-align: left;
+}
+.why>li{
+    background-color: rgba(83, 83, 83, 0.43);
+    padding:var(--space-normal);
+    border-radius: .5rem;
+    backdrop-filter: blur(10px);
+    /* 배경색이 투명해야만 적용이 된다. */
+}
+.why>li>p:first-of-type{
+    margin-bottom: var(--space-small);
+}
+
+
+
+
+
+@media (max-width:1440px){
+    .hero-slider{
+        width:100%;
+        height: auto;
+    }
+    .txt-story{flex:1;}
+    .img-story{flex:1;}
+}
+@media (max-width:768px){
+    .story h1 {
+        text-align: center;
+    }
+    .story-frame {
+        flex-direction: column;
+        text-align: center;
+    }
+    .philo-list {
+        display: flex;
+        gap: var(--space-x-large);
+        flex-direction: column;
+    }
+    .why{
+        display: grid;
+        gap:var(--space-normal);
+        grid-template-columns: repeat(2,1fr);
+    }
+}

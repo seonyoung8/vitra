@@ -1,23 +1,25 @@
 html{
-     font-family: 'Pretendard',ses;
-     font-size: var(--basic-font-pc);
+    font-family: 'Pretendard',sans-serif;
+    font-size:var(--basic-font-pc);
 }
-
+main{
+    min-height: 60vh;
+}
 h1{
     font-size:var(--fs-h1);
-    font-weight:var(--fw-bold);
+    font-weight: var(--fw-bold);
 }
 h2{
-    font-size: var(--fs-h2);
-    font-weight:var(--fw-bold);
+    font-size:var(--fs-h2);
+    font-weight: var(--fw-bold);
 }
 h3{
-    font-size: var(--fs-h3);
-    font-weight:var(--fw-bold);
+    font-size:var(--fs-h3);
+    font-weight: var(--fw-bold);
 }
 h4{
-    font-size: var(--fs-h4);
-    font-weight:var(--fw-bold);
+    font-size:var(--fs-h4);
+    font-weight: var(--fw-bold);
 }
 p{
     line-height: 140%;
@@ -25,37 +27,72 @@ p{
 .b2{
     font-size:var(--fs-bd2);
 }
+.fwr{font-weight: var(--fw-reg);}
+.fwm{font-weight: var(--fw-med);}
+.fwb{font-weight: var(--fw-bold);}
 .de{
     font-size:var(--fs-det);
 }
 .common-frame{
-    width: 1440px;
-    margin: 0 auto;
+    width:1440px;
+    margin:0 auto;
 }
 .sns{
     display: flex;
     gap:0.5rem;
 }
 .sns img{
-    height: 1.2rem;
+    height:1.2rem;
 }
-.mo{display: none;}
+.mo{
+    display: none;
+}
+.tab{
+    display: none;
+}
+.pc{
+    display: block;
+}
+main{
+    margin-top: 100px;
+}
+.btn-style{
+    display: inline-flex;
+    padding:0.25rem 0.75rem;
+    align-items: center;
+    gap: var(--space-normal);
+    border-bottom:1px solid #fff;
+}
+.btn-style:hover{
+    background-color: var(--point-color);
+    color:#fff;
+}
+.ptc{color:var(--point-color);}
+
 @media (max-width:1440px){
+    main{
+        margin-top: 5rem;
+    }
     html{
-        font-size: var(--basic-font-tab);
+        font-size:var(--basic-font-tab);
     }
     .common-frame{
-        width: auto;
-        margin: 0 2rem;
+        width:auto;
+        margin:0 2rem;
     }
+    .mo{display: none;}
+    .tab{display: block;}
+    .pc{display: none;}
 }
 @media (max-width:768px){
+    .tab{display: none;}
+    .pc{display: none;}
     .mo{display: block;}
     html{
-        font-size: var(--basic-font-moblie);
+        font-size: var(--basic-font-mobile);
     }
     .common-frame{
-        width: auto;
-        margin: 0 1rem;
+        width:auto;
+        margin:0 1rem;
     }
 }

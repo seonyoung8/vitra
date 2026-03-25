@@ -11,16 +11,19 @@
     <link rel="stylesheet" href="./style/header2.css">
     <link rel="stylesheet" href="./style/footer.css">
     <script src="./script/header.js"></script>
+    <script src="./script/heart.js"></script>
+    <script src="./script/toWon.js"></script>
 
     <!-- swiper js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
-    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/list.css">
+    <script src="./script/listArray.js"></script>
+    <script src="./script/listControl.js"></script>
 </head>
 <body>
-
-    <!-- 스마트 기기에서 보이는 메뉴 -->
+   <!-- 스마트 기기에서 보이는 메뉴 -->
     <div class="menu-smart-hidden">
         <div class="menu-top">
             <div class="common-frame">
@@ -198,261 +201,67 @@
         </div>
     </div>
 
-    <!-- 전체 컨텐츠 -->
     <main>
-        <!-- 히어로배너 -->
-        <!-- Slider main container -->
-        <div class="swiper hero-slider">
-        <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <img src="./img/slide1-pc.jpg" alt="morva coffee grand open banner" class="pc">
-                    <img src="./img/slide1-tab.jpg" alt="morva coffee grand open banner" class="tab">
-                    <img src="./img/slide1-mo.jpg" alt="morva coffee grand open banner" class="mo">
+
+        <!-- 서브 배너 -->
+         <div class="sub-banner">
+            <div class="common-frame">
+                <h1>salad menu</h1>
+            </div>
+         </div>
+         
+         <!-- 타이틀 -->
+         <div class="title">
+            <div class="common-frame">
+                <h3>Salad Bowls</h3>
+                <p>대지의 싱그러움을 한 그릇에 오롯이 담아냈습니다</p>
+            </div>
+         </div>
+
+         <!-- 옵션 -->
+          <div class="option">
+            <div class="common-frame">
+                <div class="total-view">
+                    <span>Total</span>
+                    <span id="current-count" class="fwb">6</span>
                 </div>
-                <div class="swiper-slide">
-                    <img src="./img/slide2-pc.jpg" alt="morva coffee grand open banner" class="pc">
-                    <img src="./img/slide1-tab.jpg" alt="morva coffee grand open banner" class="tab">
-                    <img src="./img/slide2-mo.jpg" alt="morva coffee grand open banner" class="mo">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./img/slide3-pc.jpg" alt="morva coffee grand open banner" class="pc">
-                    <img src="./img/slide1-tab.jpg" alt="morva coffee grand open banner" class="tab">
-                    <img src="./img/slide3-mo.jpg" alt="morva coffee grand open banner" class="mo">
+                <div>
+                    <select id="view-filter" class="b2">
+                        <option value="정렬방식">정렬방식</option>
+                        <option value="높은 가격 순">높은 가격 순</option>
+                        <option value="낮은 가격 순">낮은 가격 순</option>
+                        <option value="신상품">신상품</option>
+                    </select>
                 </div>
             </div>
-            <div class="pagination"></div>
-        </div>
-        <script>
-            const heroSwiper = new Swiper('.hero-slider', {
-            // Optional parameters
-            // direction: 'vertical',
-            loop: true,
+          </div>
 
-            // If we need pagination
-            pagination: {
-                el: '.pagination',
-            },
-
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            // And if we need scrollbar
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-            });
-        </script>
-
-        <div class="story">
+        <!-- 상품리스트 -->
+          <div class="list-warp">
             <div class="common-frame">
-                <h1>our story</h1>
-                <div class="story-frame">
-                    <div class="txt-story">
-                        <h2>VITRA Brand Identity</h2>
-                        <h4>Balance Made Simple</h4>
-                        <p>자연 그대로의 영양을 담아<br>당신의 하루를 더 생기 있게 채웁니다.</p>
-                        <p>가볍지만 깊이 있는 한 끼,<br>일상을 편안하게 이어주는 선택.</p>
-                        <p>건강을 가장 먼저 생각하는 브랜드 VITRA 입니다.</p>
-                    </div>
-                    <figure class="img-story">
-                        <img src="./img/story.jpg" alt="카페 인테리어 사진">
-                    </figure>
-                </div>
-                <div class="philo">
-                    <ul class="philo-list">
-                        <li>
-                            <h3>01. BALANCE</h3>
-                            <div>
-                                <p class="fwb">Designed for Everyday Harmony</p>
-                                <p class="fwr">
-                                    균형은 우리가 지키는 가장 중요한 기준입니다.<br>
-                                    영양과 맛, 그리고 일상의 조화를 생각합니다.<br>
-                                    매일 이어질 수 있는 식사의 균형을 전달합니다.
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <h3>02. LIGHT</h3>
-                            <div>
-                                <p class="fwb">Rooted in Fresh Ingredients</p>
-                                <p class="fwr">
-                                    신선함은 선택의 출발점입니다.<br>엄선된 재료들은 본연의 가치를 온전히 담아내며 가장 자연스러운 한 끼를 완성합니다.
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <h3>03. PURE</h3>
-                            <div>
-                                <p class="fwb">Inspired by Nature</p>
-                                <p class="fwr">
-                                    자연은 우리가 향하는 방향입니다.<br>
-                                    몸과 마음이 편안해지는 식사를 위해 본질에 가까운 선택을 이어갑니다.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="menu-frame signature">
-            <div class="common-frame">
-                <h1>SIGNATURE MENU</h1>
-                <p class="fwm">브랜드의 시작이자 변하지 않는 시그니처</p>
-                <div class="swiper signature-menu-slider">
-                    <div class="swiper-wrapper"> 
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="./img/sig1.jpg" alt="MOLVA Deep Ember">
-                            </figure>
-                            <h4>MOLVA Deep Em ber</h4>
-                            <p class="fwm">다크 로스팅 원두의 깊은 향과 묵직한 바디감을 담은 몰바의 시그니처 블랙.</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="./img/sig2.jpg" alt="MOLVA Cream Noir">
-                            </figure>
-                            <h4>MOLVA Cream Noir</h4>
-                            <p class="fwm">부드러운 크림과 진한 에스프레소가 층을 이루는 벨벳 텍스처 라떼.</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="./img/sig3.jpg" alt="MOLVA Golden Vanilla">
-                            </figure>
-                            <h4>MOLVA Golden Vanilla</h4>
-                            <p class="fwm">은은한 바닐라 향과 고소한 밀크 밸런스가 조화를 이루는 프리미엄 라떼.</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="./img/sig4.jpg" alt="MOLVA Midnight Cold Brew">
-                            </figure>
-                            <h4>MOLVA Midnight Cold Brew</h4>
-                            <p class="fwm">저온 숙성으로 완성한 깔끔한 산미와 깊은 풍미의 콜드브루.</p>
-                        </div>
-                    </div>
-                </div>
-    <script>
-        const signatureMenuSlider = new Swiper(".signature-menu-slider",{
-            slidesPerView: 1.3,
-            spaceBetween: 14,
-            breakpoints:{
-                400:{
-                    // 400화면너비보다 클 때
-                    slidesPerView: 2.2,
-                    spaceBetween: 14,
-                },
-                768:{
-                    // 768화면너비보다 클 때
-                    slidesPerView: 4,
-                    spaceBetween: 18,
-                },
-                1440:{
-                    // 1440화면너비보다 클 때
-                    slidesPerView: 4,
-                    spaceBetween: 20,
-                }
-            }
-        })
-    </script>
-            </div>
-        </div>
-
-        <div class="menu-frame best">
-            <div class="common-frame">
-                <h1>BEST MENU</h1>
-                <p class="fwm">가장 많은 식탁에 올랐던 오늘의 원픽</p>
-                <div class="swiper best-menu-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="./img/best1.jpg" alt="MOLVA Deep Black">
-                            </figure>
-                            <h4>MOLVA Deep Black</h4>
-                            <p class="fwm">깊고 진한 바디감이 살아있는 몰바 시그니처 아메리카노</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="./img/best2.jpg" alt="Creamy Cloud Latte">
-                            </figure>
-                            <h4>Creamy Cloud Latte</h4>
-                            <p class="fwm">부드러운 밀크 폼과 에스프레소의 완벽한 레이어</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="./img/best3.jpg" alt="Vanilla Silk Latte">
-                            </figure>
-                            <h4>Vanilla Silk Latte</h4>
-                            <p class="fwm">은은한 바닐라 향이 감싸는 달콤하고 고소한 라떼</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="./img/best4.jpg" alt="Dark Cocoa Mocha">
-                            </figure>
-                            <h4>Dark Cocoa Mocha</h4>
-                            <p class="fwm">진한 초콜릿과 커피가 조화를 이루는 클래식 모카</p>
-                        </div>
-                    </div>
-                </div>
-                <script>
-                    const bestMenuSlider = new Swiper(".best-menu-slider",{
-                        slidesPerView: 1.3,
-                        spaceBetween: 14,
-                        breakpoints:{
-                            400:{
-                                // 400화면너비보다 클 때
-                                slidesPerView: 2.2,
-                                spaceBetween: 14,
-                            },
-                            768:{
-                                // 768화면너비보다 클 때
-                                slidesPerView: 4,
-                                spaceBetween: 18,
-                            },
-                            1440:{
-                                // 1440화면너비보다 클 때
-                                slidesPerView: 4,
-                                spaceBetween: 20,
-                            }
-                        }
-                    })
-                </script>
-            </div>
-        </div>
-
-        <div class="franchise">
-            <div class="common-frame">
-                <h1>당신의 시작을, Vitra가 함께합니다.</h1>
-                <p class="fwm">검증된 시스템과 감각적인 브랜딩으로 안정적인 창업을 제안합니다.</p>
-                <a href="#" class="btn-style">가맹 상담 신청 <img src="./img/arrow-btn.svg" alt="바로가기 화살표"></a>
-                <h3>MOLVA를 선택해야 하는 이유</h3>
-                <ul class="why">
+                <ul class="list-grid">
                     <li>
-                        <p class="fwb">효율을 극대화한 간편 조리 시스템</p>
-                        <p class="fwm">원팩 시스템과 표준화된 레시피로 주방 운영의 피로도를 낮추고 전문 인력 없이도 일관된 맛을 유지합니다</p>
-                    </li>
-                    <li>
-                        <p class="fwb">안정적인 신선 물류 시스템</p>
-                        <p class="fwm">최상의 원물을 안정적으로 공급받는 직배송 프로세스를 통해 식자재 관리의 부담은 덜고 메뉴의 신선도는 높였습니다.</p>
-                    </li>
-                    <li>
-                        <p class="fwb">매출을 부르는 트렌디한 마케팅</p>
-                        <p class="fwm">SNS에 최적화된 트렌디한 홍보 콘텐츠를 지속적으로 지원하여 별도의 광고 고민 없이 신규 고객을 확보합니다.</p>
-                    </li>
-                    <li>
-                        <p class="fwb">지속 확장이 가능한 브랜드</p>
-                        <p class="fwm">변화하는 식문화 트렌드에 맞춘 지속적인 신메뉴 개발과 체계적인 운영 관리로 유행을 타지 않는 안정적인 성장을 약속합니다.</p>
+                        <a href="#">
+                         <figure>
+                            <img src="" alt="샐러드">
+                         </figure>   
+                         <div class="list-option">
+                            <span class="btn-heart">
+                                <img src="./img/icn-heart.svg" alt="좋아요 아이콘">
+                            </span>
+                         </div>
+                         <h4>제목</h4>
+                         <p class="fwm">내용</p>
+                         <div class="price fwb">8,500원</div>
+                        </a>
                     </li>
                 </ul>
             </div>
-        </div>
-    </main>
+          </div>
 
-    <!-- 푸터 -->
+    </main>
+    
+        <!-- 푸터 -->
     <footer>
         <div class="common-frame">
             <div class="ft1">
@@ -561,6 +370,5 @@
             <div class="ft4 b2">ⓒ 2026 MOLVA Coffee. 취업용도의 포트폴리오 웹사이트입니다.</div>
         </div>
     </footer>
-    
 </body>
 </html>
