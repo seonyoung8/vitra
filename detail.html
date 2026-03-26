@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>상품 상세페이지</title>
-
+    <!-- 공통 적용 -->
     <link rel="stylesheet" href="./style/font.css">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/system.css">
@@ -14,6 +14,7 @@
     <script src="./script/header.js"></script>
     <script src="./script/heart.js"></script>
     <script src="./script/toWon.js"></script>
+    <script src="./script/getParam.js"></script>
 
     <!-- swiper js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
@@ -23,6 +24,7 @@
     <script src="./script/listArray.js"></script>
     <script src="./script/detail-recomand.js"></script>
     <link rel="stylesheet" href="./style/detail.css">
+    <script src="./script/detail.js"></script>
 
 </head>
 <body>
@@ -116,7 +118,6 @@
         </div>
     </div>
 
-
     <!-- pc용 헤더 -->
     <header class="minjiB">
         <div class="common-frame">
@@ -204,9 +205,10 @@
             <span class="btn-menu"><img src="./img/btn-menu.svg" alt="전체메뉴버튼"></span>
         </div>
     </div>
+
     <main>
-        <div class="product">
-            <div class="common-frame">
+        <div class="product1">
+            <!-- <div class="common-frame">
                 <figure class="class="img-pro-thumb>
                     <img src="./img/pro-thumb-detail.jpg" alt="상품 썸네일 이미지">
                 </figure>
@@ -215,10 +217,10 @@
                     <p class="fwm">상품 내용~~~~~~~~~~~~~~~~~~~~~~~~~</p>
                     <dl class="price-table">
                         <dt>판매가</dt>
-                        <dd>8500원</dd>
+                        <dd>8,500원</dd>
                         <dt>배달비</dt>
                         <dd>
-                            3000원
+                            3,000원
                             <span>(20,000원 이상 구매시 무료)</span>
                         </dd>
                     </dl>
@@ -251,25 +253,25 @@
                          <li><a href="#">구매하기</a></li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="common-frame sticky-menu-wrap">
             <ul class="sticky-menu">
-                <li><a href="#">많이 찾는 제품</a></li>
-                <li><a href="#">영양 성분</a></li>
-                <li><a href="#">리뷰</a></li>
+                <li><a href="#point1">많이 찾는 제품</a></li>
+                <li><a href="#point2">영양 성분</a></li>
+                <li><a href="#point3">리뷰</a></li>
             </ul>
         </div>
         <div class="recomd-product">
             <div class="common-frame">
-                <h2>많이 찾는 제품</h2>
+                <h2 id="point1">많이 찾는 제품</h2>
                 <ul class="list-grid"></ul>
             </div>
         </div>
        
         <div class="nutri">
             <div class="common-frame">
-                <h2>영양 성분</h2>
+                <h2 id="point2">영양 성분</h2>
                 <div class="nutri-inner">
                     <div class="nutri1">
                         <h3>탄단지 샐러드</h3>
@@ -282,31 +284,32 @@
                             </tr>
                             <tr>
                                 <td class="fwb">칼로리 (Calories)</td>
-                                <td class="fwm">180kcal</td>
+                                <td class="fwm nutri-cal">180kcal</td>
                             </tr>
                             <tr>
                                 <td class="fwb">나트륨 (Sodium)</td>
-                                <td class="fwm">110 mg</td>
+                                <td class="fwm nutri-sodium">110mg</td>
                             </tr>
                             <tr>
                                 <td class="fwb">탄수화물 (Carbohydrates)</td>
-                                <td class="fwm">15g</td>
+                                <td class="fwm nutri-carb">15g</td>
                             </tr>
                             <tr>
                                 <td class="fwb">지방 (Total Fat)</td>
-                                <td class="fwm">9g</td>
+                                <td class="fwm nutri-fat">9g</td>
+                            </tr>
+                            <tr>
+                                <td class="fwb" style="padding-left: 20px;">└ 불포화 지방</td>
+                                <td class="fwm nutri-unfat">6g</td>
                             </tr>
                             <tr>
                                 <td class="fwb">단백질 (Protein)</td>
-                                <td class="fwm">9g</td>
-                            </tr><tr>
-                                <td class="fwb">카페인 (Caffeine) </td>
-                                <td class="fwm">75~150mg</td>
+                                <td class="fwm nutri-protein">9g</td>
                             </tr>
                         </table>
                     </div>
                     <div class="nutri2">
-                        <img src="" alt="영양 성분">
+                        <img src="./img/list_thumb_sweetNutsChicken.jpg" alt="영양 성분">
                     </div>
                 </div>
             </div>
@@ -314,7 +317,7 @@
 
         <div class="review">
             <div class="common-frame">
-                <h2>리뷰</h2>
+                <h2 id="point3">리뷰</h2>
                 <div class="review-wrap">
                     <div class="rev-con"> 
                         <div class="rev-user-info">

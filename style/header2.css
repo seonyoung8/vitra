@@ -1,7 +1,7 @@
 header{
-    border-bottom:1px solid var(--point-color); 
+    border-bottom:1px solid var(--pm-color-200); 
     padding-bottom: 2rem;
-    background-color: #fff;  
+    background-color: #FFFEFA;  
     max-height: 100px;
     overflow: hidden;
     box-sizing: border-box;
