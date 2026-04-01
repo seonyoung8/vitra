@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORVA</title>
+    <link rel="stylesheet" href="./style/font.css">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/system.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/header2.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <script src="./script/header.js"></script>
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./style/event.css">
+    <script src="./script/include.js" defer></script>
+</head>
+<body>
+    <div id="include-header"></div>
+    <main>
+        <div class="sub-banner">
+            <div class="common-frame">
+                <h1>오늘의 나에게 선물하는 초록빛 휴식</h1>
+            </div>
+        </div>
+        <div class="event1">
+            <div class="common-frame">
+                    <h3>이벤트</h3>
+                <p>초록빛 설렘을 담은 특별한 혜택으로 시작하세요</p>
+                <div class="event1-content">
+                    <div class="event1-img-slider">
+                            <div class="swiper event1-img-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./img/event-slide1.jpg" alt="신규 가입 & 첫 구매 감사 이벤트 회원가입 즉시 사용 가능한 3,000원 할인 쿠폰
+                                            첫 구매 시 금액 제한 없는 무료 배송 혜택
+                                            첫 주문 고객 전원 비트라 시그니처 수제 드레싱(50ml) 증정">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/event-slide2.jpg" alt="친구 초대 & 동반 가입 이벤트 친구 초대 시 무제한 적립 혜택
+                                            (나도 친구도 각각 5,000원 지급)">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/event-slide3.jpg" alt="식단 관리 정기 구독 이벤트 매달 최대 15% 상시 할인 혜택
+                                        (장기 구독 할인 + 무료 배송 고정)">
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="event1-txt-slider">
+                            <div class="swiper event1-txt-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <h4>신규 가입 & 첫 구매 감사 이벤트</h4>
+                                        <p>포토 리뷰 작성 시 즉시 사용 가능한 적립금 1,000원<br>
+                                        SNS(인스타그램/블로그) 인증 시 2,000원 할인 쿠폰 추가 발급<br>
+                                        매월 5명 '베스트 비트라 로그' 선정, 1주일 식단(5일분) 무료 제공</p>
+                                        <p class="b2 fwm">당신의 식탁 위 초록빛 휴식을 기록해 주세요.<br>
+                                        정성스러운 후기는 다른 분들에게 건강한 영감이 됩니다.<br>
+                                        비트라와 함께하는 싱그러운 일상을 공유하고 특별한 선물도 받아 가세요.</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <h4>친구 초대 & 동반 가입 이벤트</h4>
+                                        <p>친구 초대 시 나도 친구도 즉시 사용 가능한 적립금 5,000원<br>
+                                        초대한 친구가 첫 주문을 완료하면 나에게 무제한 적립 혜택<br>
+                                        매달 '최다 초대왕' 3명 선정, 비트라 프리미엄 굿즈 세트 증정</p>
+                                        <p class="b2 fwm">혼자보다 함께할 때 더 즐거운 건강한 습관을 공유해 보세요.<br>
+                                        소중한 사람에게 비트라의 싱그러운 초록빛 휴식을 선물하세요.<br>
+                                        함께 나누는 즐거움이 커질수록 당신의 혜택도 무제한으로 쌓입니다.</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <h4>식단 관리 정기 구독 이벤트</h4>
+                                        <p>4주 정기 구독 시 전체 결제 금액의 10% 즉시 할인<br>
+                                        8주 이상 장기 구독 시 15% 할인 + 무료 배송 고정<br>
+                                        구독 기간 내 모든 추가 단품 구매 시 포인트 2배 적립</p>
+                                        <p class="b2 fwm"> 매일 아침 고민 없는 건강한 한 끼.<br>
+                                        비트라 정기 구독으로 식단 관리는 더 가볍게, 혜택은 더 묵직하게 챙겨보세요.<br>
+                                        당신의 꾸준한 습관을 비트라가 응원합니다.</p>
+                                    </div>
+                                </div>
+                            </div> 
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <script>
+         const event1ImgSlider = new Swiper(".event1-img-swiper",{
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                speed:1000
+            })
+            const event1TxtSlider = new Swiper(".event1-txt-swiper",{
+                effect: "fade",
+                speed:1000
+            })
+            event1ImgSlider.on('slideChange', function () {
+                // console.log(event1ImgSlider.realIndex);
+                event1TxtSlider.slideTo(event1ImgSlider.realIndex, 1000)
+            });
+        </script>
+        <div class="event2">
+            <div class="common-frame">
+                <h3>진행중인 이벤트</h3>
+                <ul class="event-grid">
+                    <li>
+                        <figure>
+                            <img src="./img/event1.jpg" alt="친구 초대 & 동반 가입 이벤트 친구 초대 시 무제한 적립 혜택
+(나도 친구도 각각 5,000원 지급)">
+                        </figure>
+                        <h4>친구 초대 & 동반 가입 이벤트</h4>
+                        <p>친구 초대 시 무제한 적립 혜택<br>
+                        (나도 친구도 각각 5,000원 지급)</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/event2.jpg" alt="식단 관리 정기 구독 이벤트 매달 최대 15% 상시 할인 혜택
+(장기 구독 할인 + 무료 배송 고정)">
+                        </figure>
+                        <h4>식단 관리 정기 구독 이벤트</h4>
+                        <p>매달 최대 15% 상시 할인 혜택<br>
+                        (장기 구독 할인 + 무료 배송 고정)</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/event3.jpg" alt=" 오늘의 메뉴 타임 세일 이벤트 매일 2시간, 오늘의 메뉴 20% 특가
+(오전 11시 ~ 오후 1시 선착순 한정 수량)">
+                        </figure>
+                        <h4> 오늘의 메뉴 타임 세일 이벤트</h4>
+                        <p>매일 2시간, 오늘의 메뉴 20% 특가<br>
+                        (오전 11시 ~ 오후 1시 선착순 한정 수량)</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/event4.jpg" alt="포토 리뷰 & SNS 인증 이벤트 베스트 리뷰 선정 시 1주일 식단 무료
+(리뷰 적립금 + SNS 인증 2,000원 쿠폰)">
+                        </figure>
+                        <h4>포토 리뷰 & SNS 인증 이벤트</h4>
+                        <p>베스트 리뷰 선정 시 1주일 식단 무료<br>
+                        (리뷰 적립금 + SNS 인증 2,000원 쿠폰)</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <div id="include-footer"></div>
+</body>
+</html>

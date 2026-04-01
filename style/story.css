@@ -12,6 +12,9 @@
 .core{
     margin-top: var(--space-3x-large);
 }
+.core-p{
+    text-align: center;
+}
 .core h1{
     font-size:120px;
     text-transform: uppercase;
@@ -22,6 +25,9 @@
 .core h1+p{
     text-align: center;
     margin-bottom: var(--space-x-large);
+}
+.core p:nth-of-type(1){
+    line-height: 140%;
 }
 .core-card{
     
@@ -100,6 +106,9 @@
     gap:var(--space-large);
 }
 
+.iden-vitra-img img{
+    margin-bottom: var(--space-large);
+}
 
 @media (max-width:1440px){
     .sub-banner{
