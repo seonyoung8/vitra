@@ -74,13 +74,13 @@ header .sns li{
     }
     .header-smart{
         display: block;
-        border-bottom: 1px solid var(--point-color);
+        border-bottom: 1px solid var(--pm-color-200);
         position: fixed;
         z-index: 2000;
         left:0;
         top:0;
         width:100%;
-        background-color: #fff;
+        background-color: #FFFEFA;
     }
     .header-smart .common-frame{
         display: flex;
@@ -113,7 +113,7 @@ header .sns li{
     
     }
     .menu-top{
-        border-bottom:1px solid var(--point-color);
+        border-bottom:1px solid var(--pm-color-200);
     }
     .menu-top .common-frame{
         display: flex;
@@ -193,7 +193,7 @@ header .sns li{
         padding-left: 0;
         margin-bottom: 1rem;
         color:#000;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid var(--point-color);
         box-sizing: border-box;
     }
     .gnb-smart ul a{

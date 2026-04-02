@@ -22,7 +22,7 @@
 .option{
     margin-bottom:var(--space-normal);
 }
-.option.common-frame{
+.option .common-frame{
     display: flex;
     justify-content: space-between;
 }
