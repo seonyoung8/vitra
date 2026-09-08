@@ -122,7 +122,21 @@
     margin-bottom: var(--space-small);
 }
 
+CSS
+/* 메뉴 슬라이드 내부의 figure 영역이 이미지를 깔끔하게 잘라주도록 설정 */
+.menu-frame .swiper-slide figure {
+    overflow: hidden;
+}
 
+/* 이미지에 부드러운 전환 효과 부여 */
+.menu-frame .swiper-slide figure img {
+    transition: transform 0.7s ease 0s;
+}
+
+/* 마우스를 올렸을 때(hover) 이미지가 1.1배로 확대 */
+.menu-frame .swiper-slide:hover figure img {
+    transform: scale(1.1);
+}
 
 
 

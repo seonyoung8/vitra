@@ -250,6 +250,18 @@
     /* 만약 사진 뒤에 흰색 여백이 있다면 아래 속성 추가 */
     /* mix-blend-mode: multiply; 배경이 흰색일 때 투명하게 합쳐줌 */
 }
+.detail-image {
+    text-align: center;
+    margin: 80px auto;
+}
+
+.detail-image img {
+    display: block;
+    max-width: 768px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
 .review{
     margin-top: var(--space-3x-large);
     margin-bottom: var(--space-3x-large);
